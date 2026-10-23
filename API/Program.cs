@@ -9,6 +9,8 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+await app.Services.SeedDataAsync();
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
