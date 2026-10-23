@@ -2,7 +2,7 @@
 
 namespace Domain.Common.Identity;
 
-public class AppRole : IdentityRole
+public class AppUserRole : IdentityRole
 {
     public string? Description { get; set; }
 }
